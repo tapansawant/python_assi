@@ -1,0 +1,21 @@
+
+
+try:
+    a = 9
+    if a < 10:
+        raise ValueError("not eligible")
+    else:
+        print("Eligible")
+    print("---------")
+
+except ZeroDivisionError as e:
+    print("Exception occured => "+ str(e))
+
+except:
+    print("Exception occured")
+
+else:   #if our program executed without exception then else will execute
+    print('program executed successfully')
+
+finally:
+    print("tapan")
